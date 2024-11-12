@@ -1,0 +1,121 @@
+Testing collection of 2 images, 10 step(s) : 
+Epoch 1/10, Loss: 0.5865
+Epoch 2/10, Loss: 0.0016
+Epoch 3/10, Loss: 0.0001
+Epoch 4/10, Loss: 0.0000
+Epoch 5/10, Loss: 0.0000
+Epoch 6/10, Loss: 0.0000
+Epoch 7/10, Loss: 0.0000
+Epoch 8/10, Loss: 0.0000
+Epoch 9/10, Loss: 0.0000
+Epoch 10/10, Loss: 0.0000
+Predicted classes for evaluation images: [0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1], 6/20
+Testing collection of 4 images, 10 step(s) : 
+Epoch 1/10, Loss: 0.6863
+Epoch 2/10, Loss: 0.0264
+Epoch 3/10, Loss: 3.6368
+Epoch 4/10, Loss: 0.0000
+Epoch 5/10, Loss: 3.0525
+Epoch 6/10, Loss: 0.4047
+Epoch 7/10, Loss: 0.0000
+Epoch 8/10, Loss: 0.0002
+Epoch 9/10, Loss: 0.2512
+Epoch 10/10, Loss: 0.0246
+Predicted classes for evaluation images: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 11/20
+Testing collection of 6 images, 10 step(s) : 
+Epoch 1/10, Loss: 1.0315
+Epoch 2/10, Loss: 1.1153
+Epoch 3/10, Loss: 0.9178
+Epoch 4/10, Loss: 0.4886
+Epoch 5/10, Loss: 0.3863
+Epoch 6/10, Loss: 0.2522
+Epoch 7/10, Loss: 0.1681
+Epoch 8/10, Loss: 0.1384
+Epoch 9/10, Loss: 0.0461
+Epoch 10/10, Loss: 0.0116
+Predicted classes for evaluation images: [0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 7/20
+Testing collection of 8 images, 10 step(s) : 
+Epoch 1/10, Loss: 0.6316
+Epoch 2/10, Loss: 0.6978
+Epoch 3/10, Loss: 0.5646
+Epoch 4/10, Loss: 0.5189
+Epoch 5/10, Loss: 0.6124
+Epoch 6/10, Loss: 0.3544
+Epoch 7/10, Loss: 0.3903
+Epoch 8/10, Loss: 0.3659
+Epoch 9/10, Loss: 0.3631
+Epoch 10/10, Loss: 0.3495
+Predicted classes for evaluation images: [0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 6/20
+Testing collection of 10 images, 10 step(s) : 
+Epoch 1/10, Loss: 0.6343
+Epoch 2/10, Loss: 0.9038
+Epoch 3/10, Loss: 1.0179
+Epoch 4/10, Loss: 0.5158
+Epoch 5/10, Loss: 0.3545
+Epoch 6/10, Loss: 0.4418
+Epoch 7/10, Loss: 0.2595
+Epoch 8/10, Loss: 0.2202
+Epoch 9/10, Loss: 0.3250
+Epoch 10/10, Loss: 0.2660
+Predicted classes for evaluation images: [1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0], 8/20
+Testing collection of 12 images, 10 step(s) : 
+Epoch 1/10, Loss: 0.7955
+Epoch 2/10, Loss: 0.4202
+Epoch 3/10, Loss: 0.3882
+Epoch 4/10, Loss: 0.3756
+Epoch 5/10, Loss: 0.2558
+Epoch 6/10, Loss: 0.2663
+Epoch 7/10, Loss: 0.2069
+Epoch 8/10, Loss: 0.2148
+Epoch 9/10, Loss: 0.1717
+Epoch 10/10, Loss: 0.1249
+Predicted classes for evaluation images: [1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1], 9/20
+Testing collection of 14 images, 10 step(s) : 
+Epoch 1/10, Loss: 0.7442
+Epoch 2/10, Loss: 0.7803
+Epoch 3/10, Loss: 0.5938
+Epoch 4/10, Loss: 0.5274
+Epoch 5/10, Loss: 0.2872
+Epoch 6/10, Loss: 0.2604
+Epoch 7/10, Loss: 0.2391
+Epoch 8/10, Loss: 0.0880
+Epoch 9/10, Loss: 0.0490
+Epoch 10/10, Loss: 0.0539
+Predicted classes for evaluation images: [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 10/20
+Testing collection of 16 images, 10 step(s) : 
+Epoch 1/10, Loss: 1.2667
+Epoch 2/10, Loss: 0.7403
+Epoch 3/10, Loss: 0.5555
+Epoch 4/10, Loss: 0.3667
+Epoch 5/10, Loss: 0.2513
+Epoch 6/10, Loss: 0.2639
+^[[CEpoch 7/10, Loss: 0.1182
+Epoch 8/10, Loss: 0.0537
+Epoch 9/10, Loss: 0.0269
+Epoch 10/10, Loss: 0.0097
+Predicted classes for evaluation images: [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 10/20
+Testing collection of 18 images, 10 step(s) : 
+Epoch 1/10, Loss: 0.5723
+Epoch 2/10, Loss: 0.8035
+Epoch 3/10, Loss: 0.3998
+Epoch 4/10, Loss: 0.4090
+Epoch 5/10, Loss: 0.5013
+Epoch 6/10, Loss: 0.4188
+Epoch 7/10, Loss: 0.3252
+Epoch 8/10, Loss: 0.2544
+Epoch 9/10, Loss: 0.2679
+Epoch 10/10, Loss: 0.2522
+Predicted classes for evaluation images: [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 10/20
+Testing collection of 20 images, 11 step(s) : 
+Epoch 1/11, Loss: 0.8435
+Epoch 2/11, Loss: 0.4898
+Epoch 3/11, Loss: 0.2892
+Epoch 4/11, Loss: 0.2633
+Epoch 5/11, Loss: 0.1750
+Epoch 6/11, Loss: 0.0608
+Epoch 7/11, Loss: 0.0980
+Epoch 8/11, Loss: 0.0379
+Epoch 9/11, Loss: 0.0253
+Epoch 10/11, Loss: 0.0441
+Epoch 11/11, Loss: 0.0041
+Predicted classes for evaluation images: [0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1], 9/20
