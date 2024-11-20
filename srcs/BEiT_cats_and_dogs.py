@@ -54,9 +54,9 @@ def basic_training_loop(model: BeitForImageClassification, inputs: dict, labels:
         loss = loss_fn(outputs.logits, labels)
 
         # Backward pass and optimization
-        optimizer.zero_grad()  # Clear previous gradients
-        loss.backward()        # Calculate new gradients
-        optimizer.step()       # Update weights
+        optimizer.zero_grad()   # Clear previous gradients
+        loss.backward()         # Calculate new gradients
+        optimizer.step()        # Update weights
 
         total_loss += loss.item()  # Add loss to total
         
@@ -114,10 +114,10 @@ def main():
     lst_res = []
     fig1, ax1 = plt.subplots()
     turns = 3
-    for epochs in range(1, 26):
+    for epochs in range(3, 21):
         res = 0
-        for i in range(1, turns + 1):0
-            print(f"Testing collection of {len(collection)} images, {epochs} step(s), turn {i}/{turns} : " )
+        for i in range(1, turns + 1):
+            print(f"Testing collection of {len(collection)} images, {epochs} epochs(s), turn {i}/{turns} : " )
             basic_training_loop(model, batch, labels, epochs, 1e-3)
             # Evaluation
             res += eval_model(model, processor, "cpu", val_collection)
@@ -127,9 +127,10 @@ def main():
         print(f"average: {res / turns}")
         lst_res.append(res / turns)
 
-    fig1.suptitle("Binary Classification average success rate based upon number of epochs with a dataset of 20 images", fontsize=16)
-    make_graph([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], lst_res, "epochs", "success %", ax=ax1)
-    plt.savefig("epoch_plots_2.png", dpi=300)
+    fig1.suptitle("Binary Classification average success rate based upon number of epochs \n with a dataset of 20 images for a learning rate of 0.001", fontsize=10)
+    x = [el for el in range(3, 21)]
+    make_graph(x, lst_res, "epochs", "success %", ax=ax1)
+    plt.savefig("epoch_plots_3.png", dpi=300)
     plt.show() 
 
 if __name__ == "__main__":
