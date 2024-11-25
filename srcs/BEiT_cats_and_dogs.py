@@ -2,7 +2,7 @@ import torch
 from torch.optim import Adam
 from torch.nn import CrossEntropyLoss 
 from transformers import BeitConfig, BeitImageProcessor, BeitForImageClassification
-from image_collector import load_image_collection, RGB_convert
+from srcs.image_collector.image_collector import load_image_collection, RGB_convert
 from make_graph import make_graph
 from matplotlib import pyplot as plt
 BLUE = "\033[94m"
@@ -54,9 +54,9 @@ def basic_training_loop(model: BeitForImageClassification, inputs: dict, labels:
         loss = loss_fn(outputs.logits, labels)
 
         # Backward pass and optimization
-        optimizer.zero_grad()  # Clear previous gradients
-        loss.backward()        # Calculate new gradients
-        optimizer.step()       # Update weights
+        optimizer.zero_grad()   # Clear previous gradients
+        loss.backward()         # Calculate new gradients
+        optimizer.step()        # Update weights
 
         total_loss += loss.item()  # Add loss to total
         
@@ -104,8 +104,8 @@ def main():
     
     #-------------- Converting images and labels into tensors ----------------#
     batch = processor(images=collection, return_tensors="pt") 
-    
     labels = torch.tensor(labels) 
+    
     #-------------- loading tensors on device (cpu) --------------------------#
     inputs = {k: v.to(device) for k, v in batch.items()}
     labels = labels.to(device)
@@ -113,11 +113,11 @@ def main():
     #-------------- Loop Tester ----------------------------------------------#
     lst_res = []
     fig1, ax1 = plt.subplots()
-    turns = 3
-    for epochs in range(1, 26):
+    turns = 2
+    for epochs in range(3, 16):
         res = 0
-        for i in range(1, turns + 1):0
-            print(f"Testing collection of {len(collection)} images, {epochs} step(s), turn {i}/{turns} : " )
+        for i in range(1, turns + 1):
+            print(f"Testing collection of {len(collection)} images, {epochs} epochs(s), turn {i}/{turns} : " )
             basic_training_loop(model, batch, labels, epochs, 1e-3)
             # Evaluation
             res += eval_model(model, processor, "cpu", val_collection)
@@ -127,8 +127,9 @@ def main():
         print(f"average: {res / turns}")
         lst_res.append(res / turns)
 
-    fig1.suptitle("Binary Classification average success rate based upon number of epochs with a dataset of 20 images", fontsize=16)
-    make_graph([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], lst_res, "epochs", "success %", ax=ax1)
+    fig1.suptitle("Binary Classification average success rate based upon number of epochs with a dataset of 20 images", fontsize=8)
+    x = [el for el in range(3, 16)]
+    make_graph(x, lst_res, "epochs", "success %", ax=ax1)
     plt.savefig("epoch_plots_2.png", dpi=300)
     plt.show() 
 

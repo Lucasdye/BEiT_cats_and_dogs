@@ -1,0 +1,1 @@
+from image_collector import image_collector
